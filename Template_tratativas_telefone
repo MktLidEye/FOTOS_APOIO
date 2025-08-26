@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIDEYE - Central de Tratativas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset e Padrões Globais */
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      background-color: #f4f4f5; /* Tom de cinza mais suave */
+      color: #333;
+      padding: 0 10px; /* Adiciona um respiro nas laterais em telas pequenas */
+    }
+    * {
+      box-sizing: border-box;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    a {
+      color: #00a9d9;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #007a9e;
+      text-decoration: underline;
+    }
+
+    /* Cabeçalho */
+    .header-bar {
+      background-color: #00a9d9;
+      height: 40px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 8px 8px 0 0; /* Cantos arredondados no topo */
+    }
+
+    /* Conteúdo Principal */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .logo {
+      /* ATUALIZADO: Padding removido para a imagem ocupar todo o espaço */
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      /* ATUALIZADO: Largura de 100% para preencher o container */
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0 20px;
+      color: #27272a;
+    }
+
+    .highlight {
+      background-color: #3f3f46;
+      color: #fff;
+      padding: 20px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .highlight p {
+      margin: 5px 0;
+    }
+
+    /* Seção de Contatos */
+    .contact-section {
+      padding: 25px 20px;
+      font-size: 16px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #3f3f46;
+    }
+    
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-details {
+      color: #71717a;
+      font-size: 14px;
+    }
+
+    .divider {
+      border: 0;
+      border-top: 1px solid #e4e4e7;
+      margin: 25px auto;
+      width: 80%;
+    }
+
+    /* Rodapé */
+    .site-footer {
+      background-color: #00a9d9;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 0 0 8px 8px; /* Cantos arredondados na base */
+    }
+
+    .footer-top-bar {
+      background: #3f3f46;
+      height: 8px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px;
+      color: #fff;
+      flex-wrap: wrap;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      display: inline-block;
+    }
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons img {
+      width: 26px;
+      height: 26px;
+      filter: invert(1);
+      transition: opacity 0.3s;
+    }
+
+    .social-icons img:hover {
+      opacity: 0.7;
+    }
+
+    .footer-text {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .footer-text p {
+        margin: 4px 0;
+    }
+    
+    /* Media Query para Responsividade */
+    @media (max-width: 600px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-text, .social-icons {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-bar"></header>
+
+  <main class="container">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/MktLidEye/FOTOS_APOIO/main/imagem2.png" alt="LIDEYE Logo" onerror="this.onerror=null;this.src='https://placehold.co/600x200/00a9d9/FFFFFF?text=LIDEYE';">
+    </div>
+
+    <h1>Central de Tratativas</h1>
+
+    <div class="highlight">
+      <p>Olá, cliente.</p>
+      <p>Para sua segurança e praticidade, estes são<br>
+      nossos contatos de apoio:</p>
+    </div>
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <div class="contact-title">Central CFTV - Liderança Tech</div>
+        <p><a href="tel:+5581986828961">(81) 9 8682-8961</a> | <a href="mailto:central@liderancatech.com">central@liderancatech.com</a></p>
+        <p class="contact-details">Para solicitar imagens ou apoio com a plataforma.</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="contact-info">
+        <div class="contact-title">Fiscal de Ronda da LTX</div>
+        <!-- ATUALIZADO: Informações de contato alteradas -->
+        <p><a href="tel:+558198205654">(81) 9 8205-654</a></p>
+        <p class="contact-details">Para acionar quando precisar de apoio em alguma situação.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top-bar"></div>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/lideye.ai/" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61572924728191" target="_blank" rel="noopener noreferrer" title="Facebook">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+
+      <div class="footer-text">
+        <p>R. Joaquim Carneiro da Silva, 110 - Pina</p>
+        <p>© 2025 Lideye - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
